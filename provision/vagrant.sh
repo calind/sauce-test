@@ -64,8 +64,9 @@ access.format = "%R - %u %t \"%m %r%Q%q\" %s %f %{mili}d %{kilo}M %C%%"
 EOF
 ln -sf /vagrant/provision/php.ini /etc/php5/fpm/php.ini
 
+echo "Creating 'sauce' database"
+echo 'create database if not exists sauce' | mysql
+
 service nginx restart
 service php5-fpm restart
 
-echo "Creating 'sauce' database"
-echo 'create database if not exists sauce' | mysql
