@@ -1,7 +1,7 @@
 sauce-base
 ==========
 
-Kickstart sane WordPress development environment!
+Kickstart WordPress projects with a sane development environment!
 
 ## Clone and go!
 
