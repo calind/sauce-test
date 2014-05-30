@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 mkdir -p /vagrant/log
+adduser vagrant www-data
 export DEBIAN_FRONTEND=noninteractive
 
 echo "Adding pacakges repositories"
