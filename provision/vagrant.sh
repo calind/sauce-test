@@ -21,15 +21,15 @@ echo "Preconfiguring packages"
 cat << EOF > /root/.my.cnf
 [client]
     user=root
-    password=root
+    password=vagrant
 EOF
 
-echo 'mysql-server-5.5 mysql-server/root_password password root' | debconf-set-selections
-echo 'mysql-server-5.5 mysql-server/root_password_again password root' | debconf-set-selections
+echo 'mysql-server-5.5 mysql-server/root_password password vagrant' | debconf-set-selections
+echo 'mysql-server-5.5 mysql-server/root_password_again password vagrant' | debconf-set-selections
 echo 'phpmyadmin phpmyadmin/dbconfig-install boolean true' | debconf-set-selections
-echo 'phpmyadmin phpmyadmin/mysql/admin-pass password root' | debconf-set-selections
-echo 'phpmyadmin phpmyadmin/app-password-confirm password phpmyadminpw' | debconf-set-selections
-echo 'phpmyadmin phpmyadmin/mysql/app-pass password phpmyadminpw' | debconf-set-selections
+echo 'phpmyadmin phpmyadmin/mysql/admin-pass password vagrant' | debconf-set-selections
+echo 'phpmyadmin phpmyadmin/app-password-confirm password vagrant' | debconf-set-selections
+echo 'phpmyadmin phpmyadmin/mysql/app-pass password vagrant' | debconf-set-selections
 echo 'phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2' | debconf-set-selections
 
 
