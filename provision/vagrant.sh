@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+mkdir -p /vagrant/log
 export DEBIAN_FRONTEND=noninteractive
 
 echo "Adding pacakges repositories"
