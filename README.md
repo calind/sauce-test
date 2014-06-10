@@ -18,3 +18,8 @@ Point your browser to http://sauce.presslabs.net.
 
 To start a project you need [vagrant](http://www.vagrantup.com/) and 
 [virtaulbox](https://www.virtualbox.org/).
+
+## Notes
+
+Vagrant must be installed / downloaded from the vagrantup.com site
+Check your virtualization settings from your PC BIOS
