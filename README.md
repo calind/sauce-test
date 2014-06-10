@@ -7,6 +7,7 @@ Kickstart WordPress projects with a sane development environment!
 
 ```
 git clone git@github.com:PressLabs/sauce-base
+cd sauce-base
 git submodule update --init
 vagrant up
 ```
