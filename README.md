@@ -17,8 +17,13 @@ Point your browser to http://sauce.presslabs.net.
 
 ## Requirements
 
-To start a project you need [vagrant](http://www.vagrantup.com/) and 
-[virtaulbox](https://www.virtualbox.org/).
+To start a project you need to download and install [vagrant](http://www.vagrantup.com/downloads.html) and 
+[virtualbox](https://www.virtualbox.org/).
+
+```
+dpkg -i vagrant*.deb
+dpkg -i virtualbox*.deb
+```
 
 ## Notes
 
